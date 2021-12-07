@@ -1,0 +1,208 @@
+/*reset khoảng cách của brower*/
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faf4f1;
+}
+.clear{
+    clear: both;
+}
+.header{
+    background-color: #f8e1db;
+    padding: 10px 50px;
+}
+.header ul{
+    list-style: none;
+}
+.header ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.header ul li{
+    display: inline;
+/* box model : mô hình thể hiện các thành phần của 1 thẻ  vd:boder;margin,padding;content*/
+    margin-right: 15px;
+}
+/* carousel */
+.carousel{
+    background-image: url(../img/drive-download-20211125T122603Z-001/BG.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+/* activies */
+.activies{
+    padding: 100px 0;
+    text-align: center;
+}
+.activies__title{
+    margin-bottom: 30px;
+}
+.activies__title h2{
+    color: grey;
+}
+.activies__item{
+    /* float:left pải đi chung vs width; sắp các khối nội dung trên 1 hàng */
+    float: left;
+    width: 25%;    
+    padding: 0px 20px;
+}
+.activies__bg{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.activies__text{
+    margin-top: 15px;
+}
+.activies__text p{
+    margin: 10px 0;
+}
+.activies__img img{
+    width: 100%;
+    /* không làm ảnh bị hở ra ngoài classs */
+    border-radius: 10px;
+}
+.activies__img{
+    position: relative;
+}
+.activies__img a{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.activies__img a{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(243, 234, 234,0.5);
+    border-radius: 20px;
+    color: rgb(236, 99, 99);
+    font-size: 20px;
+    /*inline kh xét kích thước đc nên pải cần blook*/
+    display: block;
+
+
+
+    /*căn giữa chiều ngang text-align: center
+    chiều dọc line-height: gần bằng*/
+    line-height: 52px;
+
+}
+.activies__text button{
+    padding: 10px 30px;
+    background-color: rgb(221, 209, 209);
+    color: white;
+    border: 1px solid rgb(221, 209, 209);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.activies__text button:hover{
+    background-color: thistle;
+}
+.activies__button{
+    margin: 30px 0px;
+}
+.activies__button button{
+    padding: 15px 60px;
+    background-color: transparent;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 50px;
+    cursor: pointer;/*biến thành bàn tay*/
+}
+.activies__button button:hover{
+    background-color: thistle;
+}
+/* download */
+.download{
+    background-color: #f8e1db;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.download__content--app{
+    display: inline-block;
+}
+.download__content h1{
+    color: grey;
+}
+.download__content p{
+    color: grey;
+    margin: 12px 0px;
+    font-size: 17px;
+}
+.download__content--app h4,
+.download__content--follow h4{
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.download__content--follow{
+    display: inline-block;
+}
+.download__content--follow a{
+    text-decoration: none;
+    color: rgb(204, 143, 30);
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+}
+/* footer */
+.footer{
+    background-color: #f8e1db;
+    margin-top: 150px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 80px;
+    text-align: center;
+}
+.footer__content{
+    text-align: left;
+    display: flex;
+}
+.footer__hipcamp{
+    width: 39%;
+}
+.footer__helpyou{
+    width: 20%;
+}
+.footer__plan{
+    width: 20%;
+}
+.footer__letus{
+    width: 20%;
+}
+.footer__hipcamp,
+.footer__helpyou,
+.footer__plan,
+.footer__letus{
+    display: inline-block;
+}
+.footer__hipcamp h3,
+.footer__helpyou h3,
+.footer__plan h3,
+.footer__letus h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer__hipcamp p{
+    font-size: 18px;
+    padding-right: 80px;
+    line-height: 25px;
+}
+.footer__helpyou a,
+.footer__plan a,
+.footer__letus a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+.footer p{
+    margin-top: 25px;
+    font-size: 18px;
+}
